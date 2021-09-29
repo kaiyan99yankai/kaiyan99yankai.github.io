@@ -98,8 +98,11 @@ td,th{
   border-top-right-radius: 50px;
 } 
 
-tr:last-child{
+tbody tr:last-of-type th{
   border-bottom-left-radius: 50px;
+}
+
+tbody tr:last-of-type td:last-of-type{
   border-bottom-right-radius: 50px;
 }
 
