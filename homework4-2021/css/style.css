@@ -53,10 +53,10 @@ p{
 
 a{
   font-size: 16px;
-  color: #C12258;
+  color: #B21F50;
   text-decoration-line: underline;
   text-decoration-style: wavy;
-  text-decoration-color: #C12258;
+  text-decoration-color: #B21F50;
 }
 
 *:focus{
@@ -77,6 +77,9 @@ td,th{
 }
 
 .colhead{
+  text-transform: uppercase;
+  vertical-align: middle;
+  text-align: center;
   min-width: 125px;
   padding: 10px;
   color: white;
@@ -94,6 +97,11 @@ td,th{
 .colhead:last-child{
   border-top-right-radius: 50px;
 } 
+
+tr:last-child{
+  border-bottom-left-radius: 50px;
+  border-bottom-right-radius: 50px;
+}
 
 table{
   margin-left: auto;
