@@ -25,12 +25,12 @@ a:link, a:visited {
 }
 .pricing{
     display: flex;
-    flex-flow: column wrap;
+    flex-flow: row wrap;
     align-items: center;
     justify-content: center;
 }
-.pricing > *{
-    width: 450px;
+.pricing > div{
+    flex-basis: 450px;
 }
 .card header{
     background-color: #288088;
@@ -87,16 +87,20 @@ a:link, a:visited {
     body{
         background-image: none;
     }
+    body > header{
+        flex-direction: column;
+    }
     .nav_links{
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
+        width: 100vw;
+        flex-flow: row nowrap;
+        align-content: space-around;
+        justify-content: space-around;
     }
     .pricing{
-        flex-direction: row;
+        flex-flow: row nowrap;
         align-items: flex-end;
     }
-    .pricing > *{
+    .pricing > div{
         border: solid 2px #45ADDD;
         flex-basis: 250px;
     }
@@ -105,5 +109,11 @@ a:link, a:visited {
     }
     .gallery{
         display: none;
+    }
+    .card > ul :nth-child(2n+1)::before{
+        content: "\1F44D";
+    }
+    .card > ul :nth-child(2n)::after{
+        content: "\1F44D";
     }
 }
