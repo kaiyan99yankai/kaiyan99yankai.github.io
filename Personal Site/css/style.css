@@ -1,0 +1,238 @@
+*{
+	font-family: 'Alegreya Sans SC', sans-serif;
+	color: white;
+}
+body{
+	padding: 10px;
+	background-blend-mode: lighten;
+	background-color: rgb(87, 85, 85);
+}
+h1{
+	font-size: 50px;
+	font-weight: bold;
+	text-align: center;
+}
+h2{
+	font-size: 40px;
+	font-weight: bold;
+	margin: 0 10px;
+}
+h3{
+	font-size: 30px;
+	font-weight: bold;
+	margin: 0 10px;
+}
+p{
+	font-size: 25px;
+	text-align: right;
+	font-weight: bold;
+}
+footer p{
+	text-align: left;
+	margin: 0 10px;
+}
+ul{
+	font-weight: bold;
+	font-size: 20px;
+}
+/*style of the link*/
+nav ul{
+	font-size: 25px;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+	grid-template-rows: auto;
+	column-gap: 10px;
+}
+nav li{
+	text-align: center;
+}
+nav li > a{
+	color: lightblue;
+	text-decoration: none;
+}
+#current > a{
+	color:blanchedalmond;
+	border: 1px dotted blanchedalmond;
+}
+nav li > a:hover{
+	color: lightgoldenrodyellow;
+	border: 1px dashed lightgoldenrodyellow;
+}
+
+/*horizontal line*/
+hr{
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 5px solid white;
+    margin: 1em 10px;
+    padding: 0;
+}
+hr.in{
+	border-top: 2px solid white;
+}
+/*Academic part*/
+#Academic{
+	margin: 0 10px;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-rows: auto auto auto auto;
+}
+img.Umich{
+	grid-column: 1 / 2;
+	grid-row: 1 / 3;
+	justify-self: center;
+	border: 0px solid black;
+	border-radius: 10000px;
+	width: 80%;
+	margin: auto 0;
+}
+p.Umich{
+	text-align: right;
+	margin: auto 0;
+	grid-column: 2 / 4;
+	grid-row: 1 / 3;
+}
+img.SJTU{
+	grid-column: 3 / 4;
+	grid-row: 3 / 5;
+	justify-self: center;
+	border: 0px solid black;
+	border-radius: 10000px;
+	width: 80%;
+	margin: auto 0;
+}
+p.SJTU{
+	text-align: left;
+	margin: auto 0;
+	grid-column: 1 / 3;
+	grid-row: 3 / 5;
+}
+/*Hobby part*/
+#Hobby{
+	text-align: left;
+	margin: 0 10px;
+}
+#Hobby p{
+	text-align: left;
+}
+/*Internship*/
+div.locationTime{
+	display: flex;
+	flex: row nowrap;
+	justify-content: space-between;
+	margin: 0 10px;
+}
+div.job{
+	margin: 0 30px;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+	grid-template-rows: auto;
+	column-gap: 10px;
+	row-gap: 10px;
+}
+ul.Huawei{
+	text-align: left;
+	margin: auto 0;
+	grid-column: 2 / 5;
+	grid-row: 1 / 2;
+	list-style-type: circle;
+}
+ul.Huawei li:nth-of-type(3){
+	color: blanchedalmond
+}
+img.Huawei{
+	grid-column: 1 / 2;
+	grid-row: 1 / 2;
+	justify-self: left;
+	width: 80%;
+	margin: auto 0;
+	border: 2px solid black;
+	border-radius: 7px;
+}
+ul.Wanxiang{
+	text-align: left;
+	margin: auto 0;
+	grid-column: 1 / 4;
+	grid-row: 1 / 2;
+	list-style-type: circle;
+}
+img.Wanxiang{
+	grid-column: 4 / 5;
+	grid-row: 1 / 2;
+	justify-self: right;
+	width: 80%;
+	margin: auto 0;
+	border: 2px solid black;
+	border-radius: 7px;
+}
+/*Project*/
+ul.Poster{
+	text-align: left;
+	margin: auto 0;
+	grid-column: 1 / 5;
+	grid-row: 1 / 2;
+	list-style-type: circle;
+}
+ul.Poster li:nth-of-type(3){
+	color: blanchedalmond
+}
+ul.Tesla{
+	text-align: left;
+	margin: auto 0;
+	grid-column: 1 / 5;
+	grid-row: 1 / 2;
+	list-style-type: circle;
+}
+ul.Tencent{
+	text-align: left;
+	margin: auto 0;
+	grid-column: 1 / 5;
+	grid-row: 1 / 2;
+	list-style-type: circle;
+}
+ul.Tencent li:nth-of-type(3){
+	color: blanchedalmond
+}
+/*Work Out*/
+div.workOut img{
+	width: 70%;
+	margin: 0 auto;
+	border: 2px solid black;
+	border-radius: 7px;
+}
+div.workOut{
+	margin: 0 30px;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: auto auto auto auto;
+	column-gap: 10px;
+	row-gap: 20px;
+}
+div.workOut p{
+	text-align: right;
+}
+div.workOut p:nth-of-type(1){
+	text-align: right;
+	grid-column: 2 / 3;
+	grid-row: 1 / 2;
+	margin: auto 0;
+}
+div.workOut p:nth-of-type(2){
+	text-align: left;
+	grid-column: 1 / 2;
+	grid-row: 2 / 3;
+	margin: auto 0;
+}
+div.workOut p:nth-of-type(3){
+	text-align: right;
+	grid-column: 2 / 3;
+	grid-row: 3 / 4;
+	margin: auto 0;
+}
+div.workOut p:nth-of-type(4){
+	text-align: left;
+	grid-column: 1 / 2;
+	grid-row: 4 / 5;
+	margin: auto 0;
+}
