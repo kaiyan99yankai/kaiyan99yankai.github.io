@@ -2,6 +2,17 @@
 	font-family: 'Alegreya Sans SC', sans-serif;
 	color: white;
 }
+input::placeholder{
+	font-family: 'Alegreya Sans SC', sans-serif;
+	color:black;
+}
+input:hover::placeholder{
+	color: white;
+}
+input{
+	font-family: 'Alegreya Sans SC', sans-serif;
+	font-size: 15px;
+}
 body{
 	padding: 10px;
 	background-blend-mode: lighten;
@@ -37,9 +48,9 @@ ul{
 }
 /*style of the link*/
 nav ul{
-	font-size: 25px;
+	font-size: 20px;
 	display: grid;
-	grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+	grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
 	grid-template-rows: auto;
 	column-gap: 10px;
 }
@@ -235,4 +246,62 @@ div.workOut p:nth-of-type(4){
 	grid-column: 1 / 2;
 	grid-row: 4 / 5;
 	margin: auto 0;
+}
+fieldset{
+	display: grid;
+	margin: 10px;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+	grid-template-rows: auto;
+	grid-gap: 15px;
+}
+fieldset legend{
+	margin: auto 0;
+	font-size: 25px;
+	text-align: center;
+}
+fieldset label{
+	grid-column: 1 / 2;
+	margin: auto 0;
+	font-size: 20px;
+	color: black;
+}
+fieldset input{
+	grid-column: 2 / 5;
+	height: 8vh;
+	border-color: black;
+  	border-style: solid;
+  	border-width: 2px;
+	border-radius: 7px;
+	text-align: center;
+	font-size: 15px;
+	color: black;
+}
+fieldset input:hover, fieldset input:focus{
+	background-color: black;
+	color: white;
+	border: 2px solid white;
+}
+fieldset input.submit{
+	grid-column: 1 / 5;
+	margin: 0 30vw;
+	height: 5vh;
+	background:#B9DFFF;
+	color:#fff;
+	border:1pxsolid#eee;
+	border-radius:20px;
+	box-shadow:5px5px5px#eee;
+	text-shadow:none;
+	color: black;
+}
+fieldset input.submit:hover{
+	background:#016ABC;
+	color:#fff;
+	border:1pxsolid#eee;
+	border-radius:20px;
+	text-shadow:none;
+}
+form{
+	background-color: white;
+	border: 2px solid white;
+	border-radius: 15px;
 }
