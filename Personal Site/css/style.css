@@ -48,7 +48,7 @@ ul{
 }
 /*style of the link*/
 nav ul{
-	font-size: 15px;
+	font-size: 20px;
 	display: grid;
 	grid-template-columns: repeat(6, 1fr);
 	grid-template-rows: auto;
