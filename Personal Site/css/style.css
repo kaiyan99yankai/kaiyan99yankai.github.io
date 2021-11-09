@@ -266,6 +266,7 @@ fieldset label{
 	color: black;
 }
 fieldset input{
+	margin: auto 0;
 	grid-column: 2 / 5;
 	height: 8vh;
 	border-color: black;
