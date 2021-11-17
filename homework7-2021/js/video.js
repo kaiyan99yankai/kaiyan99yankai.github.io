@@ -1,13 +1,18 @@
 window.onload = function () {
 	var video = document.getElementById("player1");
+	var video_status = false;
+	video.onplaying = function(){
+		video_status = true;
+	}
 	window.addEventListener("load", function() {
 		console.log("Good job opening the window")
 	});
-
 	document.getElementById("play").onclick = function(){
-		video.play();
-		console.log("Play Video");
-		document.getElementById("volume").innerHTML = "100%";
+		if(!video_status){
+			video.play();
+			console.log("Play Video");
+			document.getElementById("volume").innerHTML = "100%";
+		}
 	};
 
 	document.getElementById("pause").onclick = function(){
@@ -32,12 +37,11 @@ window.onload = function () {
 		if (video.currentTime != 67.403333){
 			console.log("Original location " + video.currentTime.toString());
 			video.currentTime = video.currentTime + 15;
-			console.log("New location is " + video.currentTime.toString());
+			console.log("New location " + video.currentTime.toString());
 		}else{
-			console.log("Going back to beginning")
-			video.currentTime = 0;
-			console.log("New location is " + video.currentTime.toString());
+			console.log("Going back to beginning");
 			video.play();
+			console.log("New location " + video.currentTime.toString());
 		}
 	}
 
