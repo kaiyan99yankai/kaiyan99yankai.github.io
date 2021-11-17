@@ -12,6 +12,9 @@ window.onload = function () {
 			video.play();
 			console.log("Play Video");
 			document.getElementById("volume").innerHTML = "100%";
+		}else{
+			video.play();
+			console.log("Play Video");
 		}
 	};
 
