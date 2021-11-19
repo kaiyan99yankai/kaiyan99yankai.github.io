@@ -11,7 +11,7 @@ input:hover::placeholder{
 }
 input{
 	font-family: 'Alegreya Sans SC', sans-serif;
-	font-size: 15px;
+	font-size: 2vw;
 }
 body{
 	padding: 10px;
@@ -19,40 +19,39 @@ body{
 	background-color: rgb(87, 85, 85);
 }
 h1{
-	font-size: 50px;
+	font-size: 5vw;
 	font-weight: bold;
 	text-align: center;
 }
 h2{
-	font-size: 30px;
+	font-size: 3vw;
 	font-weight: bold;
-	margin: 0 10px;
+	margin: 0 1.5vw;
 }
 h3{
-	font-size: 25px;
+	font-size: 2vw;
 	font-weight: bold;
-	margin: 0 10px;
+	margin: 0 1.5vw;
 }
 p{
-	font-size: 15px;
+	font-size: 2vw;
 	text-align: right;
 	font-weight: bold;
 }
 footer p{
 	text-align: left;
-	margin: 0 10px;
+	margin: 0 1.5vw;
 }
 ul{
 	font-weight: bold;
-	font-size: 20px;
+	font-size: 2vw;
 }
 /*style of the link*/
 nav ul{
-	font-size: 20px;
-	display: grid;
-	grid-template-columns: repeat(6, 1fr);
-	grid-template-rows: auto;
-	column-gap: 10px;
+	margin: 0 1.5vw;
+	font-size: 2.5vw;
+	display: flex;
+	justify-content: space-between;
 }
 nav li{
 	text-align: center;
@@ -76,7 +75,7 @@ hr{
     height: 1px;
     border: 0;
     border-top: 5px solid white;
-    margin: 1em 10px;
+    margin: 1em 1.5vw;
     padding: 0;
 }
 hr.in{
@@ -84,7 +83,7 @@ hr.in{
 }
 /*Academic part*/
 #Academic{
-	margin: 0 10px;
+	margin: 0 1.5vw;
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr;
 	grid-template-rows: auto auto auto auto;
@@ -122,7 +121,7 @@ p.SJTU{
 /*Hobby part*/
 #Hobby{
 	text-align: left;
-	margin: 0 10px;
+	margin: 0 1.5vw;
 }
 #Hobby p{
 	text-align: left;
@@ -132,10 +131,10 @@ div.locationTime{
 	display: flex;
 	flex: row nowrap;
 	justify-content: space-between;
-	margin: 0 10px;
+	margin: 0 1.5vw;
 }
 div.job{
-	margin: 0 30px;
+	margin: 0 3vw;
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr 1fr;
 	grid-template-rows: auto;
@@ -207,62 +206,52 @@ ul.Tencent li:nth-of-type(3){
 }
 /*Work Out*/
 div.workOut img{
-	width: 70%;
+	object-fit: fill;
+	padding: 0.5vw;
+	width: 40vw;
+	height: 40vw;
 	margin: 0 auto;
 	border: 2px solid black;
 	border-radius: 7px;
 }
 div.workOut{
-	margin: 0 30px;
+	margin: 0 3vw;
 	display: grid;
 	grid-template-columns: 1fr 1fr;
-	grid-template-rows: auto auto auto auto;
-	column-gap: 10px;
-	row-gap: 20px;
+	grid-template-rows: auto;
+	column-gap: 5vw;
+}
+div.workOut div{
+	display: grid;
+	row-gap: 1.5vh;
+	grid-template-columns: 1fr;
+	grid-template-rows: auto;
 }
 div.workOut p{
-	text-align: right;
-}
-div.workOut p:nth-of-type(1){
-	text-align: right;
-	grid-column: 2 / 3;
-	grid-row: 1 / 2;
+	font-size: 2.5vw;
+	text-align: center;
 	margin: auto 0;
 }
-div.workOut p:nth-of-type(2){
-	text-align: left;
-	grid-column: 1 / 2;
-	grid-row: 2 / 3;
-	margin: auto 0;
-}
-div.workOut p:nth-of-type(3){
-	text-align: right;
-	grid-column: 2 / 3;
-	grid-row: 3 / 4;
-	margin: auto 0;
-}
-div.workOut p:nth-of-type(4){
-	text-align: left;
-	grid-column: 1 / 2;
-	grid-row: 4 / 5;
-	margin: auto 0;
+form{
+	width: 94vw;
+	margin: 0 auto;
 }
 fieldset{
 	display: grid;
-	margin: 10px;
+	margin: 1.5vw;
 	grid-template-columns: 1fr 1fr 1fr 1fr;
 	grid-template-rows: auto;
-	grid-gap: 15px;
+	grid-gap: 2vh;
 }
 fieldset legend{
 	margin: auto 0;
-	font-size: 25px;
+	font-size: 2.5vw;
 	text-align: center;
 }
 fieldset label{
 	grid-column: 1 / 2;
 	margin: auto 0;
-	font-size: 20px;
+	font-size: 2vw;
 	color: black;
 }
 fieldset input{
@@ -274,7 +263,7 @@ fieldset input{
   	border-width: 2px;
 	border-radius: 7px;
 	text-align: center;
-	font-size: 15px;
+	font-size: 1.8vw;
 	color: black;
 }
 fieldset input:hover, fieldset input:focus{
@@ -306,3 +295,43 @@ form{
 	border: 2px solid white;
 	border-radius: 15px;
 }
+
+a.skip{
+	font-size: 1.5vw;
+	background: white;
+	left: 2vw;
+	padding: 0.5vw;
+	position: absolute;
+	top: -4vw;
+	-webkit-transition: top 1s ease-out;
+	transition: top 1s ease-out;
+	z-index: 1;
+}
+  
+a.skip:focus{
+	top:2vw;
+	color: black;
+	text-decoration-style: solid;
+}
+@media screen and (min-width:800px) {
+	div.workOut{
+		margin: 0 3vw;
+		display: grid;
+		grid-template-columns: auto;
+		grid-template-rows: auto auto;
+	}
+	div.workOut div{
+		display: flex;
+		flex-direction: row;
+		justify-content: space-around;
+	}
+	div.workOut img{
+		width: 20vw;
+		height: 20vw;
+	}
+	div.workOut p{
+		display: block;
+		width:20vw;
+	}
+}
+
