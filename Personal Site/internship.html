@@ -13,13 +13,20 @@
 </head>
 <body>
     <a class="skip" href="#main">Skip to Main Content</a>
+    <a class="top" href="#main">Back to top</a>
 	<header>
-		<h1>Kaiyan Cao</h1>
+		<h1 class="name">
+            <span>K</span>
+            <span>A</span>
+            <span>I</span>
+            <span>Y</span>
+            <span>A</span>
+            <span>N</span>
+        </h1>
 		<nav>
 			<ul>
-				<li><a href = "index.html">About Me</a></li>
+				<li><a href = "index.html">Project</a></li>
 				<li><a href = "workout.html">Work Out</a></li>
-				<li><a href = "project.html">Project</a></li>
                 <li id="current"><a href = "internship.html">internship</a></li>
                 <li><a href = "contact.html">Contact</a></li>
 				<li><a href = "https://github.com/kaiyan99yankai" target="_blank">Github</a></li>
@@ -28,6 +35,16 @@
 	</header>
     <hr/>
 	<main id="main">
+        <div id="about_me">
+            <img class="Umich" src="imgs/Umich.png" alt="School of Information"> <!--From https://en.wikipedia.org/wiki/University_of_Michigan-->
+            <img class="SJTU" src="imgs/SJTU.png" alt="Shanghai Jiao Tong University"> <!--From https://en.wikipedia.org/wiki/Shanghai_Jiao_Tong_University-->
+            <img class="Boxing" src="imgs/boxing.jpg" alt="Boxing Gear">
+            <p class="Umich">My name is Kaiyan Cao, and I am a master student in School of Information, Umich.</p>
+            <p class="SJTU">I earned my bachelor degree of Electrical and Computer Engineering in Shanghai Jiao Tong University.</p>
+            <p class="Boxing">I am interested in arts and sports. I started to learn sketch in a small age. I am a daily visiter to the gym. My favourite sport is soccer, and in the past year, I became a fan in boxing.</p>
+        </div>
+        <hr class="in"></hr>
+        <div class="Whole">
         <div>
             <h2>Huawei Technologies Co., Ltd.</h2>
             <hr class="in"></hr>
@@ -37,7 +54,16 @@
             </div>
             <h3>Intern of CG Engineer</h3>
             <div class="job">
-                <img class="Huawei" src="imgs/Huawei.png" alt="Huawei Company"> <!--From https://iconscout.com/icon/huawei-3521494-->
+                <a href="https://www.linkedin.com/company/huawei" target="_blank" class="Huawei flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <img src="imgs/Huawei.png" alt="Huawei Company"> <!--From https://iconscout.com/icon/huawei-3521494-->
+                        </div>
+                        <p class="flip-card-back">
+                            Huawei Technologies Co., Ltd. is a Chinese multinational technology corporation.
+                        </p>
+                    </div>
+                </a>
                 <ul class="Huawei">
                     <li>Cooperated with ID/UX designers and engineers to develop an algorithm based on machine learning and computer graphics to automatically find the main color of a given poster.</li>
                     <li>Developed an algorithm based on traditional computer vision to automatically figure out important patterns on a given poster.</li>
@@ -53,12 +79,22 @@
             </div>
             <h3>Intern of Operation Engineer</h3>
             <div class = "job">
-                <img class="Wanxiang" src="imgs/Wanxiang.jpg" alt="Wanxiang Block Chain"> <!--From https://www.linkedin.com/company/wxblockchain?originalSubdomain=cn-->
+                <a href = "https://www.linkedin.com/company/wxblockchain" target="_blank" class="Wanxiang flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <img class="Wanxiang" src="imgs/Wanxiang.jpg" alt="Wanxiang Block Chain"> <!--From https://www.linkedin.com/company/wxblockchain?originalSubdomain=cn-->
+                        </div>
+                        <p class="flip-card-back">
+                            Wanxiang Holding Co., Ltd. consisting of Wanxiang Lab is a corporation in blockchain industy.
+                        </p>
+                    </div>
+                </a>
                 <ul class="Wanxiang">
                     <li>Helped to build a distributed big data system based on Hadoop to save the bitcoin transaction record.</li>
                     <li>Updated the docker management tool Kubernetes system to Alibaba Cloud.</li>
                 </ul> 
             </div>
+        </div>
         </div>
         <hr/>
 	</main>

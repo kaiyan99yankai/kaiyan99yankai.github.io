@@ -2,6 +2,55 @@
 	font-family: 'Alegreya Sans SC', sans-serif;
 	color: white;
 }
+
+#about_me{
+	height: 270vw;
+}
+#about_me *{
+	position: absolute;
+	border: 0.3vw solid black;
+	border-radius: 80vw;
+	width: 80vw;
+	height: 80vw;
+	overflow: hidden;
+}
+#about_me img{
+	left: 10vw;
+	top: 20vw;
+}
+#about_me img.SJTU{
+	top: 110vw;
+}
+#about_me img.Boxing{
+	top: 200vw;
+}
+#about_me p{
+	background-color: white;
+	border-radius: 80vw;
+	color: black;
+	text-align: center;
+	width: 80vw;
+	height: 80vw;
+	opacity: 0;
+	transition: opacity 1s;
+	left: 10vw;
+	font-size: 5vw;
+}
+#about_me p.Umich{
+	padding: 30vw 2vw;
+	top: 20vw;
+}
+#about_me p.SJTU{
+	top: 110vw;
+	padding: 30vw 2vw;
+}
+#about_me p.Boxing{
+	padding: 25vw 2vw;
+	top: 200vw;
+}
+#about_me p:hover{
+	opacity: 1;
+}
 input::placeholder{
 	font-family: 'Alegreya Sans SC', sans-serif;
 	color:black;
@@ -47,9 +96,16 @@ ul{
 	font-size: 2vw;
 }
 /*style of the link*/
+header{
+	position: fixed;
+	z-index: 10;
+	background-color: black;
+	width: 100vw;
+	height: 15vw;
+}
 nav ul{
 	margin: 0 1.5vw;
-	font-size: 2.5vw;
+	font-size: 4vw;
 	display: flex;
 	justify-content: space-between;
 }
@@ -81,51 +137,6 @@ hr{
 hr.in{
 	border-top: 2px solid white;
 }
-/*Academic part*/
-#Academic{
-	margin: 0 1.5vw;
-	display: grid;
-	grid-template-columns: 1fr 1fr 1fr;
-	grid-template-rows: auto auto auto auto;
-}
-img.Umich{
-	grid-column: 1 / 2;
-	grid-row: 1 / 3;
-	justify-self: center;
-	border: 0px solid black;
-	border-radius: 10000px;
-	width: 80%;
-	margin: auto 0;
-}
-p.Umich{
-	text-align: right;
-	margin: auto 0;
-	grid-column: 2 / 4;
-	grid-row: 1 / 3;
-}
-img.SJTU{
-	grid-column: 3 / 4;
-	grid-row: 3 / 5;
-	justify-self: center;
-	border: 0px solid black;
-	border-radius: 10000px;
-	width: 80%;
-	margin: auto 0;
-}
-p.SJTU{
-	text-align: left;
-	margin: auto 0;
-	grid-column: 1 / 3;
-	grid-row: 3 / 5;
-}
-/*Hobby part*/
-#Hobby{
-	text-align: left;
-	margin: 0 1.5vw;
-}
-#Hobby p{
-	text-align: left;
-}
 /*Internship*/
 div.locationTime{
 	display: flex;
@@ -138,8 +149,8 @@ div.job{
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr 1fr;
 	grid-template-rows: auto;
-	column-gap: 10px;
-	row-gap: 10px;
+	column-gap: 2vw;
+	row-gap: 1vw;
 }
 ul.Huawei{
 	text-align: left;
@@ -151,14 +162,11 @@ ul.Huawei{
 ul.Huawei li:nth-of-type(3){
 	color: blanchedalmond
 }
-img.Huawei{
+a.Huawei{
 	grid-column: 1 / 2;
 	grid-row: 1 / 2;
-	justify-self: left;
-	width: 80%;
-	margin: auto 0;
-	border: 2px solid black;
-	border-radius: 7px;
+	height: 18vw;
+	width: 18vw;
 }
 ul.Wanxiang{
 	text-align: left;
@@ -167,14 +175,49 @@ ul.Wanxiang{
 	grid-row: 1 / 2;
 	list-style-type: circle;
 }
-img.Wanxiang{
+a.Wanxiang{
 	grid-column: 4 / 5;
 	grid-row: 1 / 2;
-	justify-self: right;
-	width: 80%;
-	margin: auto 0;
-	border: 2px solid black;
-	border-radius: 7px;
+	height: 18vw;
+	width: 18vw;
+}
+.flip-card {
+	perspective: 1000px; 
+}
+.flip-card-inner {
+	position: relative;
+	width: 100%;
+	height: 100%;
+	text-align: center;
+	transition: transform 0.8s;
+	transform-style: preserve-3d;
+}
+
+.flip-card:hover .flip-card-inner {
+	transform: rotateY(180deg);
+}
+.flip-card:focus .flip-card-inner {
+	transform: rotateY(180deg);
+} 
+.flip-card-front, .flip-card-back {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	-webkit-backface-visibility: hidden; /* Safari */
+	backface-visibility: hidden;
+	border-radius: 2vw;
+}
+.flip-card-front img{
+	width: 100%;
+	height: 100%;
+	border-radius: 2vw;
+}
+.flip-card-back{
+	background-color: white;
+	color: black;
+	text-align: center;
+	padding: 1vw;
+	transform: rotateY(180deg);
 }
 /*Project*/
 ul.Poster{
@@ -208,8 +251,6 @@ ul.Tencent li:nth-of-type(3){
 div.workOut img{
 	object-fit: fill;
 	padding: 0.5vw;
-	width: 40vw;
-	height: 40vw;
 	margin: 0 auto;
 	border: 2px solid black;
 	border-radius: 7px;
@@ -218,14 +259,9 @@ div.workOut{
 	margin: 0 3vw;
 	display: grid;
 	grid-template-columns: 1fr 1fr;
-	grid-template-rows: auto;
-	column-gap: 5vw;
 }
 div.workOut div{
 	display: grid;
-	row-gap: 1.5vh;
-	grid-template-columns: 1fr;
-	grid-template-rows: auto;
 }
 div.workOut p{
 	font-size: 2.5vw;
@@ -233,9 +269,10 @@ div.workOut p{
 	margin: auto 0;
 }
 form{
-	width: 94vw;
+	width: 75vw;
 	margin: 0 auto;
 }
+
 fieldset{
 	display: grid;
 	margin: 1.5vw;
@@ -244,6 +281,7 @@ fieldset{
 	grid-gap: 2vh;
 }
 fieldset legend{
+	color: black;
 	margin: auto 0;
 	font-size: 2.5vw;
 	text-align: center;
@@ -298,7 +336,8 @@ form{
 
 a.skip{
 	font-size: 1.5vw;
-	background: white;
+	font-weight: bolder;
+	background: blue;
 	left: 2vw;
 	padding: 0.5vw;
 	position: absolute;
@@ -310,28 +349,169 @@ a.skip{
   
 a.skip:focus{
 	top:2vw;
-	color: black;
+	color: red;
 	text-decoration-style: solid;
 }
+
+div.Whole{
+	margin: 0 1.5vw;
+	border-radius: 2vw; 
+	background-image: url("../imgs/Shanghai.jpg");
+	background-attachment: fixed;
+  	background-position: center;
+  	background-repeat: no-repeat;
+  	background-size: cover;
+}
+div.Whole>div{
+	width: 80vw;
+	margin: 0 auto;
+	padding: 2vw;
+	border-radius: 2vw;
+	background-color: rgba(0, 0, 0, 1);
+}
+.top{
+	position: fixed;
+	bottom: 10px;
+	background-color: black;
+}
 @media screen and (min-width:800px) {
+	.top{
+		display: none;
+	}
+	header{
+		background-color: transparent;
+		position: inherit;
+		height: inherit;
+		width: inherit;
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+	}
 	div.workOut{
-		margin: 0 3vw;
-		display: grid;
-		grid-template-columns: auto;
-		grid-template-rows: auto auto;
+		display: block;
+	}
+	header nav ul li{
+		display: inline;
+		font-size: 4vw;
+		margin: 0 1vw;
+	}
+	header nav{
+		display: block;
+		max-width: 1500px;
+		margin: auto;
+	}
+	header h1{
+		margin: auto;
+	}
+	header h1 *{
+		font-size: 70px;
 	}
 	div.workOut div{
 		display: flex;
 		flex-direction: row;
+		flex-wrap: wrap;
 		justify-content: space-around;
 	}
 	div.workOut img{
-		width: 20vw;
-		height: 20vw;
+		width: 300px;
+		height: 300px;
 	}
 	div.workOut p{
-		display: block;
-		width:20vw;
+		display: none;
+	}
+	#about_me{
+		height: 30vw;
+	}
+	#about_me *{
+		position: absolute;
+		border: 0.3vw solid black;
+		border-radius: 15vw;
+		width: 30vw;
+		height: 30vw;
+		overflow: hidden;
+	}
+	#about_me img.Umich{
+		left: 2vw;
+		top: inherit;
+	}
+	#about_me img.SJTU{
+		left: 35vw;
+		top: inherit;
+	}
+	#about_me img.Boxing{
+		left: 68vw;
+		top: inherit;
+	}
+	#about_me p{
+		background-color: white;
+		border-radius: 15vw;
+		color: black;
+		text-align: center;
+		width: 30vw;
+		height: 30vw;
+		opacity: 0;
+		transition: opacity 1s;
+		font-size: 2vw;
+	}
+	#about_me p:hover{
+		opacity: 1;
+	}
+	#about_me p.Umich{
+		padding: 11vw 2vw;
+		left: 2vw;
+		top: inherit;
+	}
+	#about_me p.SJTU{
+		padding: 10.5vw 2vw;
+		left: 35vw;
+		top: inherit;
+	}
+	#about_me p.Boxing{
+		padding: 7.5vw 2vw;
+		left: 68vw;
+		top: inherit;
+	}
+	.name > * {
+		animation: turn 2.5s ease-in;
+		display: inline-block;
+		font-family: sans-serif;
+		font-weight: normal;
+		letter-spacing: 1.5vw;
+		text-shadow: 0 0 .5rem #def;
+		text-transform: uppercase;
+		transform: scaleY(1);
+	}
+	  
+	@keyframes turn {
+		0% {
+		  text-shadow: 0 0 0 white;
+		  transform: scaleY(1) rotateY(90deg);
+		}
+		100% {
+		  text-shadow: 0 0 .5rem white;
+		  transform: scaleY(1) rotateY(0);
+		}
 	}
 }
+@media (prefers-reduced-motion: reduce) {
+	#about_me p {
+	  transition: none;
+	  opacity: 1;
+	}
+	div.Whole{
+		background-attachment: local;
+	}
+	.flip-card:hover .flip-card-inner {
+		transform: none;
+	}
+	.name > * {
+		animation: none;
+	}
+  }
 
+  @media screen and (min-width:2055px) {
+	header nav ul li{
+		font-size: 70px;
+		margin: 0 15px
+	}
+  }

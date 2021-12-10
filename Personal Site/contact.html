@@ -13,13 +13,20 @@
 </head>
 <body>
     <a class="skip" href="#main">Skip to Main Content</a>
+    <a class="top" href="#main">Back to top</a>
 	<header>
-		<h1>Kaiyan Cao</h1>
+		<h1 class="name">
+            <span>K</span>
+            <span>A</span>
+            <span>I</span>
+            <span>Y</span>
+            <span>A</span>
+            <span>N</span>
+        </h1>
 		<nav>
 			<ul>
-				<li><a href = "index.html">About Me</a></li>
+				<li><a href = "index.html">Project</a></li>
 				<li><a href = "workout.html">Work Out</a></li>
-				<li><a href = "project.html">Project</a></li>
                 <li><a href = "internship.html">internship</a></li>
                 <li id="current"><a href = "contact.html">Contact</a></li>
 				<li><a href = "https://github.com/kaiyan99yankai" target="_blank">Github</a></li>
@@ -28,8 +35,18 @@
 	</header>
     <hr/>
 	<main id="main">
-        <h2>If you want to contact me, please the following form</h2>
-        <form action = "https://formspree.io/f/moqyogne" method = "POST">
+        <div id="about_me">
+            <img class="Umich" src="imgs/Umich.png" alt="School of Information"> <!--From https://en.wikipedia.org/wiki/University_of_Michigan-->
+            <img class="SJTU" src="imgs/SJTU.png" alt="Shanghai Jiao Tong University"> <!--From https://en.wikipedia.org/wiki/Shanghai_Jiao_Tong_University-->
+            <img class="Boxing" src="imgs/boxing.jpg" alt="Boxing Gear">
+            <p class="Umich">My name is Kaiyan Cao, and I am a master student in School of Information, Umich.</p>
+            <p class="SJTU">I earned my bachelor degree of Electrical and Computer Engineering in Shanghai Jiao Tong University.</p>
+            <p class="Boxing">I am interested in arts and sports. I started to learn sketch in a small age. I am a daily visiter to the gym. My favourite sport is soccer, and in the past year, I became a fan in boxing.</p>
+        </div>
+        <hr class="in"></hr> 
+        <div class="Whole"> 
+        <div>
+        <form action = "https://formspree.io/f/xnqwqarw" method = "POST">
             <fieldset>
                 <legend> Contact Information </legend>
                 <label for = "fName">Your name</label>
@@ -43,8 +60,10 @@
                 <input class = "submit" type = "submit" value = "Submit">
             </fieldset>
         </form>
+        </div>
+        </div>
 	</main>
-
+    <hr/>
 	<footer>
 		<p>Kaiyan Cao &copy; 2021</p>
 	</footer>

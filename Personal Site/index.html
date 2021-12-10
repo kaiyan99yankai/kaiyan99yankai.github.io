@@ -9,17 +9,24 @@
     <link href="https://fonts.googleapis.com/css2?family=Alegreya+Sans+SC:ital@1&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/html5reset.css">
 	<link rel="stylesheet" href="css/style.css">
-	<title>About Me</title>
+	<title>Project</title>
 </head>
 <body>
     <a class="skip" href="#main">Skip to Main Content</a>
+    <a class="top" href="#main">Back to top</a>
 	<header>
-		<h1>Kaiyan Cao</h1>
+		<h1 class="name">
+            <span>K</span>
+            <span>A</span>
+            <span>I</span>
+            <span>Y</span>
+            <span>A</span>
+            <span>N</span>
+        </h1>
 		<nav>
 			<ul>
-				<li id="current"><a href = "index.html">About Me</a></li>
+				<li id="current"><a href = "index.html">Project</a></li>
 				<li><a href = "workout.html">Work Out</a></li>
-				<li><a href = "project.html">Project</a></li>
                 <li><a href = "internship.html">internship</a></li>
                 <li><a href = "contact.html">Contact</a></li>
 				<li><a href = "https://github.com/kaiyan99yankai" target="_blank">Github</a></li>
@@ -28,24 +35,74 @@
 	</header>
     <hr/>
 	<main id="main">
-        <div>
-            <h2>Academic</h2>
-            <hr class="in"></hr>
-            <div id="Academic">
-        <img class="Umich" src="imgs/Umich.png" alt="School of Information"> <!--From https://en.wikipedia.org/wiki/University_of_Michigan-->
-            <p class="Umich">My name is Kaiyan Cao, and I am a master student in School of Information, Umich.</p> 
+        <div id="about_me">
+            <img class="Umich" src="imgs/Umich.png" alt="School of Information"> <!--From https://en.wikipedia.org/wiki/University_of_Michigan-->
             <img class="SJTU" src="imgs/SJTU.png" alt="Shanghai Jiao Tong University"> <!--From https://en.wikipedia.org/wiki/Shanghai_Jiao_Tong_University-->
+            <img class="Boxing" src="imgs/boxing.jpg" alt="Boxing Gear">
+            <p class="Umich">My name is Kaiyan Cao, and I am a master student in School of Information, Umich.</p>
             <p class="SJTU">I earned my bachelor degree of Electrical and Computer Engineering in Shanghai Jiao Tong University.</p>
+            <p class="Boxing">I am interested in arts and sports. I started to learn sketch in a small age. I am a daily visiter to the gym. My favourite sport is soccer, and in the past year, I became a fan in boxing.</p>
+        </div>
+        <hr class="in"></hr>
+        <div class="Whole">
+        <div id="Project">
+            <h2>Intelligent Style Recognition System for Poster Generator</h2>
+            <hr class="in"></hr>
+            <div class="locationTime">
+                <p>Shanghai, China</p> 
+                <p>Apr. 2021 - July 2021</p>   
+            </div>
+            <h3>Team Member</h3>
+            <div class="job">
+                <ul class="Poster">
+                    <li>Cooperated with Huawei ID/UX designers to conclude the main nine style labels that can be widely used for advertisement.</li>
+                    <li>Cooperated with web designers to build the project framework with Vue and Flask based on Javascript.</li>
+                    <li>Generated animation effects for each style label on the front-end based on Webgl and three.js to act as the future background of the posters.</li>
+                </ul>
+            </div>
+            <hr class="in"></hr>
+            <h2>Stock Price Prediction of Tesla, Inc.</h2>
+            <hr class="in"></hr>
+            <div class="locationTime">
+                <p> Shanghai, China</p> 
+                <p> Oct. 2019 - Dec. 2019</p>   
+            </div>
+            <h3>Team Member</h3>
+            <div class = "job">
+                <ul class="Tesla">
+                    <li>Analyzed stock price in the past; based on the results, applied models like ARIMA, SARIMA, SARFIMA, ARIMA- GARCH for prediction in R.</li>
+                    <li>Compared and validated the models with methods such as cross-validation, normality checking, and Ljung-Box test to find the best one, which was SARFIMA.</li>
+                </ul> 
+            </div>
+            <hr class="in"></hr>
+            <h2>Game Developer Program in Tencent</h2>
+            <hr class="in"></hr>
+            <div class="locationTime">
+                <p> Shanghai, China</p> 
+                <p> Sept. 2019 - Dec. 2019</p>   
+            </div>
+            <h3>Team Leader</h3>
+            <div class = "job">
+                <ul class="Tencent">
+                    <li>Discussed with the game designer to confirm the basic plot and play method of the game.</li>
+                    <li>Cooperated with the art designers to create the main character and scenes.</li>
+                    <li>Developed the game for the Android system based on Unity.</li>
+                </ul> 
+            </div>
+            <hr class="in"></hr>
+            <h2>Cloud Service and Edge Computing Research Group</h2>
+            <hr class="in"></hr>
+            <div class="locationTime">
+                <p> Shanghai, China</p> 
+                <p> Apr. 2019 - Aug. 2019</p>   
+            </div>
+            <h3>Research Assitant</h3>
+            <div class = "job">
+                <ul class="Tencent">
+                    <li>Simulated a multi-service providers model of edge computing on Matlab to optimize a resource assignment algorithm with the maximization of the provides’ profit.</li>
+                </ul> 
             </div>
         </div>
-        <hr/>
-        <div>
-            <h2>Hobby</h2>
-            <hr class="in"></hr>
-            <div id="Hobby">
-            <p>I am interested in arts and sports. I started to learn sketch in a small age.</p>
-            <p>I am a daily visiter to the gym. My favourite sport is soccer, and in the past year, I became a fan in boxing.</p>
-            </div>
         </div>
         <hr/>
 	</main>
