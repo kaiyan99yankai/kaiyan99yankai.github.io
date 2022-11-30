@@ -302,9 +302,7 @@ img {
   display: flex;
   align-items: center;
   position: relative;
-  font-weight: var(--font-semi);
   padding: .5rem 2rem;
-  margin-bottom: var(--mb-4);
   border-radius: .5rem;
 }
 
